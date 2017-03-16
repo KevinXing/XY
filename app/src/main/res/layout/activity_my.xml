@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.uestcxzk.firstproject.MyActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- <include layout="@layout/content_my" /> -->
+
+    <!-- <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" /> -->
+
+    <ImageView android:id="@+id/pc_img_clip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="75dip"
+        android:layout_marginLeft="200dip" />
+
+    <ImageView android:id="@+id/player_img_clip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="350dip"
+        android:layout_marginLeft="10dip" />
+
+    <ImageButton
+        android:id="@+id/rat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:theme="@style/MyButton"
+        android:src="@drawable/rat_button" />
+
+    <ImageButton
+        android:id="@+id/cat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:theme="@style/MyButton"
+        android:src="@drawable/cat_button" />
+
+    <ImageButton
+        android:id="@+id/elephant_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:theme="@style/MyButton"
+        android:src="@drawable/elephant_button" />
+
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dip"
+        android:layout_marginLeft="200dip"
+        android:id="@+id/player_blood"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dip"
+        android:layout_marginLeft="65dip"
+        android:id="@+id/pc_blood"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/win_text"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:visibility="gone"
+        android:text="Player Win" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_text"
+        android:textSize="20sp"
+        android:textColor="@color/Black"
+        android:layout_marginTop="400dip"
+        android:layout_marginLeft="225dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pc_text"
+        android:textSize="20sp"
+        android:textColor="@color/Black"
+        android:layout_marginTop="140dip"
+        android:layout_marginLeft="85dip"
+        android:text="Computer" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>
